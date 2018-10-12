@@ -127,6 +127,10 @@ textarea {
 .spaceAround {
   justify-content: space-around;
 }
+
+.textCenter {
+  text-align: center;
+}
 /************************UTILITIES CLASS*******************/
 
 /************************ !!!! BASE STYLE CSS!!!! ************************/
@@ -151,6 +155,9 @@ textarea {
 /************************FIXED BAR******************/
 
 /************************START HEADER******************/
+.PrincipalTitle {
+  align-items: center;
+}
 /************************END HEADER******************/
 /************************START MAIN******************/
 /************************END MAIN******************/
@@ -174,15 +181,39 @@ textarea {
 /**************************MOBILE***************************/
 @media screen and (min-width: 280px){
 
+/*********BAR FIXED********/
   .IconMobile {
     display: flex;
   }
   .SearchBar {
     display: none;
   }
+/*********BAR FIXED********/
+/*********HEADER********/
 header nav {
   display: none;
 }
+/*********HEADER********/
+
+/*********MAIN********/
+.CallToAction {
+  display: none;
+}
+
+.MainTextImg {
+  align-items: center;
+}
+
+.MainArticle {
+  align-items: center;
+}
+/*********MAIN********/
+
+/*********FOOTER********/
+footer nav {
+  display: none;
+}
+/*********FOOTER********/
 }
 
 
