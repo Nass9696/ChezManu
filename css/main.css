@@ -98,8 +98,39 @@ textarea {
    ========================================================================== */
 
 /************************GENERAL RULES*******************/
+footer {
+  border-top: 1px solid black;
+}
 
+article {
+  background-color: yellow;
+}
 /************************GENERAL RULES*******************/
+
+/************************COLOR UTILITIES CLASS*******************/
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.colornone{
+  color: none;
+}
+.backGreen {
+  background-color: green;
+}
+
+.backRed {
+  background-color: red;
+}
+
+.backYellow {
+  background-color: yellow;
+}
+/************************COLOR UTILITIES CLASS*******************/
 
 /************************UTILITIES CLASS*******************/
 .row {
@@ -131,6 +162,11 @@ textarea {
 .textCenter {
   text-align: center;
 }
+
+.marginR {
+  margin-right: 0.5em;
+}
+
 /************************UTILITIES CLASS*******************/
 
 /************************ !!!! BASE STYLE CSS!!!! ************************/
@@ -148,8 +184,11 @@ textarea {
 }
 
 .NavBar {
-  width: 30%;
   background-color: red;
+  align-items: center;
+}
+
+.FormBarFixed {
   align-items: center;
 }
 /************************FIXED BAR******************/
@@ -159,8 +198,17 @@ textarea {
   align-items: center;
 }
 /************************END HEADER******************/
+.ulListHeader {
+  width: 50%;
+}
 /************************START MAIN******************/
+.iconeArticle {
+  background-color: green;
+  justify-content: flex-end;
+  align-items: center;
+}
 /************************END MAIN******************/
+
 /************************START FOOTER******************/
 /************************END FOOTER******************/
 
@@ -179,26 +227,15 @@ textarea {
 /********************!!!!! START STYLE RESPONSIVE DESIGN !!!!!!***************************/
 
 /**************************MOBILE***************************/
-@media screen and (min-width: 280px){
+
 
 /*********BAR FIXED********/
   .IconMobile {
     display: flex;
   }
-  .SearchBar {
-    display: none;
-  }
 /*********BAR FIXED********/
-/*********HEADER********/
-header nav {
-  display: none;
-}
-/*********HEADER********/
 
 /*********MAIN********/
-.CallToAction {
-  display: none;
-}
 
 .MainTextImg {
   align-items: center;
@@ -209,14 +246,6 @@ header nav {
 }
 /*********MAIN********/
 
-/*********FOOTER********/
-footer nav {
-  display: none;
-}
-/*********FOOTER********/
-}
-
-
 /**************************MOBILE***************************/
 
 /**************************TABLETTE***************************/
@@ -224,6 +253,15 @@ footer nav {
 .IconMobile {
   display: none;
 }
+
+.FormBarFixed {
+  display: flex;
+}
+/***********************HEADER*********************/
+.NavHeader {
+  display: flex;
+}
+/***********************HEADER*********************/
 }
 /**************************TABLETTE***************************/
 

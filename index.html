@@ -23,27 +23,27 @@
   <div class = "Logo column alignC">
     <img src="img/chezmanu.png" alt="" height="90"/>
     <div class="IconMobile">
-      <i class="fas fa-bars MenuIconMobile"></i>
+      <i class="fas fa-bars fa-x2 MenuIconMobile"></i>
     </div>
   </div>
-  <nav class = "NavBar row justifyC">
-    <i class="fas fa-sign-in-alt IconLogin"></i>
-    <form>
-      <input class = "SearchBar" type ="search" name ="Rechercher" value="" width = "10">
+  <nav class = "NavBar row justifyC spaceAround">
+    <a href = ""><i class="fas fa-sign-in-alt IconLogin black marginR"></i></a>
+    <form class = "FormBarFixed none">
+      <input class = "SearchBar" type ="search" name ="Rechercher" value="" size = "10"/>
+      <i class="fas fa-search"></i>
     </form>
-    <i></i>
   </nav>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BAR FIXED~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<header class = ".column">
-  <nav>
-    <ul>
-      <li>LIEN</li>
-      <li>LIEN</li>
-      <li>LIEN</li>
-      <li>LIEN</li>
+<header>
+  <nav class = "NavHeader none">
+    <ul class = "ulListHeader spaceAround row">
+      <a href = ""><li>LIEN</li></a>
+      <a href = ""><li>LIEN</li></a>
+      <a href = ""><li>LIEN</li></a>
+      <a href = ""><li>LIEN</li></a>
     </ul>
   </nav>
   <section class = "PrincipalTitle column">
@@ -56,7 +56,7 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <main>
-  <div class="CallToAction">
+  <div class="CallToAction none">
     <a href="#"></a>
     <p>Test</p>
     <a href="#"></a>
@@ -79,10 +79,10 @@
       <h3>Titre Article</h3>
       <img src="" alt="">
       <p class = "textCenter">text</p>
-      <div class="iconeArticle">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter-square"></i>
-        <a href="#">Voir</a>
+      <div class="iconeArticle row">
+        <i class="fab fa-facebook marginR"></i>
+        <i class="fab fa-twitter-square marginR"></i>
+        <a class = "marginR" href="#">Voir</a>
       </div>
     </article>
     <!--Second-->
@@ -90,33 +90,34 @@
       <h3>Titre Article</h3>
       <img src="" alt="">
       <p class = "textCenter">text</p>
-      <div class="iconeArticle">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter-square"></i>
-        <a href="#">Voir</a>
+      <div class="iconeArticle row">
+        <i class="fab fa-facebook marginR"></i>
+        <i class="fab fa-twitter-square marginR"></i>
+        <a class = "marginR" href="#">Voir</a>
     </article>
     <!--Third-->
     <article>
       <h3>Titre Article</h3>
       <img src="" alt="">
       <p class = "textCenter">text</p>
-      <div class="iconeArticle">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter-square"></i>
-        <a href="#">Voir</a>
+      <div class="iconeArticle row">
+        <i class="fab fa-facebook marginR"></i>
+        <i class="fab fa-twitter-square marginR"></i>
+        <a class = "marginR" href="#">Voir</a>
+      </div>
+      <!--END ARTICLES-->
     </article>
-    <!--END ARTICLES-->
-    </div>
     <!--END DIV ARTICLES-->
+    </div>
+<!--~~~~~~ END 3 SECTION~~~~~~~-->
   </section>
-  <!--~~~~~~ END 3 SECTION~~~~~~~-->
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer>
   <!--START NAV-->
-  <nav>
+  <nav class = "none">
     <!--FIRST UL-->
     <ul>
       <li>TEST</li>
@@ -137,9 +138,9 @@
     </ul>
   </nav>
   <!--END NAV-->
-<p>©2018 01copyright.fr. All right reserved.</p>
+<p class = "textCenter">©2018 01copyright.fr. All right reserved.</p>
 <!--BLOCK SOCIAL ICONES-->
-<div class="Social">
+<div class="Social row justifyC spaceAround">
   <a href = ""><i class="fab fa-facebook"></i></a>
   <a href = ""><i class="fab fa-twitter-square"></i></a>
   <a href = ""><i class="fab fa-linkedin"></i></a>
