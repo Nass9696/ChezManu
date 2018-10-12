@@ -97,6 +97,117 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/************************GENERAL RULES*******************/
+
+/************************GENERAL RULES*******************/
+
+/************************UTILITIES CLASS*******************/
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justifyC {
+  justify-content: center;
+}
+
+.alignC {
+  align-content: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+/************************UTILITIES CLASS*******************/
+
+/************************ !!!! BASE STYLE CSS!!!! ************************/
+
+/************************FIXED BAR******************/
+.Logo {
+  width: 30%;
+  background-color: blue;
+  align-items: center;
+}
+
+.IconMobile {
+  background-color: green;
+  display: none;
+}
+
+.NavBar {
+  width: 30%;
+  background-color: red;
+  align-items: center;
+}
+/************************FIXED BAR******************/
+
+/************************START HEADER******************/
+/************************END HEADER******************/
+/************************START MAIN******************/
+/************************END MAIN******************/
+/************************START FOOTER******************/
+/************************END FOOTER******************/
+
+
+/************************ !!!! BASE STYLE CSS!!!! ************************/
+
+/****************RESPONSIVE UTILITIES CLASS****************/
+.none {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+/****************RESPONSIVE UTILITIES CLASS****************/
+
+/********************!!!!! START STYLE RESPONSIVE DESIGN !!!!!!***************************/
+
+/**************************MOBILE***************************/
+@media screen and (min-width: 280px){
+
+  .IconMobile {
+    display: flex;
+  }
+  .SearchBar {
+    display: none;
+  }
+header nav {
+  display: none;
+}
+}
+
+
+/**************************MOBILE***************************/
+
+/**************************TABLETTE***************************/
+@media screen and (min-width: 500px){
+.IconMobile {
+  display: none;
+}
+}
+/**************************TABLETTE***************************/
+
+/**************************DESKTOP***************************/
+@media screen and (min-width: 1200px){
+.IconMobile {
+    display: none;
+  }
+.SearchBar {
+  display: flex;
+  }
+}
+/**************************DESKTOP***************************/
+
+/********************!!!!! END STYLE RESPONSIVE DESIGN !!!!!!***************************/
 
 
 
