@@ -159,6 +159,9 @@ article {
   justify-content: space-around;
 }
 
+.spaceAroundC{
+  align-content: space-around;
+}
 .textCenter {
   text-align: center;
 }
@@ -169,7 +172,7 @@ article {
 
 /************************UTILITIES CLASS*******************/
 
-/************************ !!!! BASE STYLE CSS!!!! ************************/
+/************************ !!!!  START BASE STYLE CSS!!!! ************************/
 
 /************************FIXED BAR******************/
 .Logo {
@@ -179,8 +182,7 @@ article {
 }
 
 .IconMobile {
-  background-color: green;
-  display: none;
+  display: flex;
 }
 
 .NavBar {
@@ -207,13 +209,25 @@ article {
   justify-content: flex-end;
   align-items: center;
 }
+
+.MainTextImg {
+  align-items: center;
+}
+
+.MainArticle {
+  height: 30em;
+  align-items: center;
+}
 /************************END MAIN******************/
 
 /************************START FOOTER******************/
 /************************END FOOTER******************/
 
 
-/************************ !!!! BASE STYLE CSS!!!! ************************/
+/************************ !!!!  END BASE STYLE CSS!!!! ************************/
+
+
+/********************!!!!! START STYLE RESPONSIVE DESIGN !!!!!!***************************/
 
 /****************RESPONSIVE UTILITIES CLASS****************/
 .none {
@@ -224,31 +238,7 @@ article {
 }
 /****************RESPONSIVE UTILITIES CLASS****************/
 
-/********************!!!!! START STYLE RESPONSIVE DESIGN !!!!!!***************************/
-
-/**************************MOBILE***************************/
-
-
-/*********BAR FIXED********/
-  .IconMobile {
-    display: flex;
-  }
-/*********BAR FIXED********/
-
-/*********MAIN********/
-
-.MainTextImg {
-  align-items: center;
-}
-
-.MainArticle {
-  align-items: center;
-}
-/*********MAIN********/
-
-/**************************MOBILE***************************/
-
-/**************************TABLETTE***************************/
+/**************************TABLET***************************/
 @media screen and (min-width: 500px){
 .IconMobile {
   display: none;
@@ -262,8 +252,21 @@ article {
   display: flex;
 }
 /***********************HEADER*********************/
+
+/***********************MAIN*********************/
+.CallToActionBlock {
+  display: flex;
+  align-items: center;
 }
-/**************************TABLETTE***************************/
+
+.MainArticle {
+  height: 10em;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/***********************MAIN*********************/
+}
+/**************************TABLET***************************/
 
 /**************************DESKTOP***************************/
 @media screen and (min-width: 1200px){
