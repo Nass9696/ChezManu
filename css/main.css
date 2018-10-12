@@ -98,6 +98,9 @@ textarea {
    ========================================================================== */
 
 /************************GENERAL RULES*******************/
+header {
+  height: 15em;
+}
 footer {
   border-top: 1px solid black;
 }
@@ -240,6 +243,7 @@ article {
 
 /**************************TABLET***************************/
 @media screen and (min-width: 500px){
+/**************************BAR FIXED***************************/
 .IconMobile {
   display: none;
 }
@@ -247,6 +251,8 @@ article {
 .FormBarFixed {
   display: flex;
 }
+/**************************BAR FIXED***************************/
+
 /***********************HEADER TABLET*********************/
 .NavHeader {
   display: flex;
@@ -275,13 +281,43 @@ article {
 /**************************TABLET***************************/
 
 /**************************DESKTOP***************************/
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1199px){
+
+/***********************GENERAL RULES*********************/
+/***********************GENERAL RULES*********************/
+/***********************BAR FIXED DESKTOP*********************/
 .IconMobile {
     display: none;
   }
-.SearchBar {
-  display: flex;
+  .SearchBar {
+    display: flex;
   }
+/***********************BAR FIXED DESKTOP*********************/
+
+/***********************HEADER DESKTOP*********************/
+/***********************HEADER DESKTOP********************/
+
+/***********************MAIN DESKTOP*********************/
+.BlockMainArticle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.MainArticle {
+  height: 20em;
+  width: 30%;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/***********************MAIN DESKTOP*********************/
+
+/***********************FOOTER DESKTOP*********************/
+.NavFooter {
+  display: none;
+}
+/***********************FOOTER DESKTOP*********************/
+
 }
 /**************************DESKTOP***************************/
 
