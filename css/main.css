@@ -100,14 +100,21 @@ textarea {
 /************************GENERAL RULES*******************/
 header {
   height: 15em;
+  background-color: #ffe66d
+}
+main {
+  background-color: #ffe66d
 }
 footer {
   border-top: 1px solid black;
+  background-color: #7c99b4;
 }
 
 article {
-  background-color: yellow;
+  border: 1px solid black;
+  width: 40%;
 }
+
 /************************GENERAL RULES*******************/
 
 /************************COLOR UTILITIES CLASS*******************/
@@ -133,6 +140,7 @@ article {
 .backYellow {
   background-color: yellow;
 }
+
 /************************COLOR UTILITIES CLASS*******************/
 
 /************************UTILITIES CLASS*******************/
@@ -178,9 +186,12 @@ article {
 /************************ !!!!  START BASE STYLE CSS!!!! ************************/
 
 /************************FIXED BAR******************/
+.BarFixed {
+  background-color: #7c99b4;
+}
+
 .Logo {
   width: 30%;
-  background-color: blue;
   align-items: center;
 }
 
@@ -189,7 +200,6 @@ article {
 }
 
 .NavBar {
-  background-color: red;
   align-items: center;
 }
 
@@ -202,13 +212,14 @@ article {
 .PrincipalTitle {
   align-items: center;
 }
-/************************END HEADER******************/
+
 .ulListHeader {
   width: 50%;
 }
+/************************END HEADER******************/
+
 /************************START MAIN******************/
 .iconeArticle {
-  background-color: green;
   justify-content: flex-end;
   align-items: center;
 }
@@ -243,7 +254,18 @@ article {
 
 /**************************TABLET***************************/
 @media screen and (min-width: 500px){
+
+/************************GENERAL RULES*******************/
+article {
+  width: 30%;
+}
+/************************GENERAL RULES*******************/
+
 /**************************BAR FIXED***************************/
+.Logo {
+  width: 10%;
+}
+
 .IconMobile {
   display: none;
 }
@@ -256,6 +278,11 @@ article {
 /***********************HEADER TABLET*********************/
 .NavHeader {
   display: flex;
+}
+
+.PrincipalTitle {
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /***********************HEADER TABLET*********************/
 
@@ -283,8 +310,11 @@ article {
 /**************************DESKTOP***************************/
 @media screen and (min-width: 1199px){
 
-/***********************GENERAL RULES*********************/
-/***********************GENERAL RULES*********************/
+/***********************GENERAL DESKTOP RULES*********************/
+article {
+  width: 45%;
+}
+/***********************GENERAL DESKTOP RULES*********************/
 /***********************BAR FIXED DESKTOP*********************/
 .IconMobile {
     display: none;
@@ -304,8 +334,8 @@ article {
   justify-content: center;
 }
 .MainArticle {
-  height: 20em;
-  width: 30%;
+  height: 30em;
+  width: 40%;
   align-content: space-around;
   flex-wrap: wrap;
   align-items: center;
