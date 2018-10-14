@@ -14,16 +14,146 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BAR FIXED~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class = "BarFixed row spaceBetween">
+  <div class = "Logo column alignC">
+    <a href = ""><img src="img/chezmanu.png" alt="" height="90"/></a>
+    <div class="IconMobile">
+      <i class="fas fa-bars fa-x2 MenuIconMobile"></i>
+    </div>
+  </div>
+  <nav class = "NavBar row justifyC spaceAround">
+    <a class = "marginR" href = "">Sign In</a>
+    <i class="fas fa-users IconLogin black marginR"></i>
+    <form class = "FormBarFixed none">
+      <input class = "SearchBar" type ="search" name ="Rechercher" value="" size = "10"/>
+      <i class="fas fa-search"></i>
+    </form>
+  </nav>
+</div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BAR FIXED~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<header>
+  <nav class = "NavHeader none">
+    <ul class = "ulListHeader spaceAround row">
+      <a href = ""><li>LIEN</li></a>
+      <a href = ""><li>LIEN</li></a>
+      <a href = ""><li>LIEN</li></a>
+      <a href = ""><li>LIEN</li></a>
+    </ul>
+  </nav>
+  <section class = "PrincipalTitle column textCenter">
+    <h1>CHEZ MANU</h1>
+    <p>SLOGAN</p>
+  </section>
+</header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<main>
+  <div class="CallToActionBlock row spaceAround none">
+    <div class = "CallToActionA column textCenter">
+      <a href="#">CallAction</a>
+      <p>Test</p>
+    </div>
+    <div class = "CallToActionB column textCenter">
+      <a href="#">CallAction</a>
+      <p>Test</p>
+    </div>
+    <div class = "CallToActionC column textCenter">
+      <a href="#">CallAction</a>
+      <p>Test</p>
+    </div>
+  </div>
+  <!--~~~~~~ START 3 SECTION~~~~~~~-->
+  <section class = "MainTextImg alignC column">
+    <p>blablabla</p>
+    <img src=""/>
+  </section>
+  <h4>Le coin Gourmand</h4>
+  <section class = "BlockMainArticle">
+    <!--START DIV ARTICLES-->
+    <div class = "MainArticle column spaceAround alignC">
+    <!--START ARTICLES-->
+    <!--First-->
+    <article>
+      <h3>Petit Pain</h3>
+      <img src = "" alt="">
+      <p class = "textCenter">text</p>
+      <div class="iconeArticle row">
+        <i class="fab fa-facebook marginR"></i>
+        <i class="fab fa-twitter-square marginR"></i>
+        <a class = "marginR" href="#">Voir</a>
+      </div>
+    </article>
+    <!--Second-->
+    <article>
+      <h3>Tartelette</h3>
+      <img src = "" alt="">
+      <p class = "textCenter">text</p>
+      <div class="iconeArticle row">
+        <i class="fab fa-facebook marginR"></i>
+        <i class="fab fa-twitter-square marginR"></i>
+        <a class = "marginR" href="#">Voir</a>
+    </article>
+    <!--Third-->
+    <article>
+      <h3>Éclaire</h3>
+      <img src = "" alt="" width= "100"/>
+      <p class = "textCenter">text</p>
+      <div class="iconeArticle row">
+        <i class="fab fa-facebook marginR"></i>
+        <i class="fab fa-twitter-square marginR"></i>
+        <a class = "marginR" href="#">Voir</a>
+      </div>
+      <!--END ARTICLES-->
+    </article>
+    <!--END DIV ARTICLES-->
+    </div>
+<!--~~~~~~ END 3 SECTION~~~~~~~-->
+  </section>
+</main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~START FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<footer>
+  <!--START NAV-->
+  <nav class = "NavFooter alignC spaceAround none">
+    <!--FIRST UL-->
+    <ul>
+      <li><a href = "">LIEN</a></li>
+      <li><a href = "">LIEN</a></li>
+      <li><a href = "">LIEN</a></li>
+    </ul>
+    <!--SECOND UL-->
+    <ul>
+      <li><a href = "">LIEN</a></li>
+      <li><a href = "">LIEN</a></li>
+      <li><a href = "">LIEN</a></li>
+    </ul>
+    <!--THIRD UL-->
+    <ul>
+      <li><a href = "">LIEN</a></li>
+      <li><a href = "">LIEN</a></li>
+      <li><a href = "">LIEN</a></li>
+    </ul>
+  </nav>
+  <!--END NAV-->
+<p class = "textCenter">©2018 01copyright.fr. All right reserved.</p>
+<!--BLOCK SOCIAL ICONES-->
+<div class="Social row justifyC spaceAround">
+  <a href = ""><i class="fab fa-facebook fa-2x"></i></a>
+  <a href = ""><i class="fab fa-twitter-square fa-2x"></i></a>
+  <a href = ""><i class="fab fa-linkedin fa-2x"></i></a>
+  <a href = ""><i class="fab fa-github-square fa-2x"></i></a>
+</div>
+<!--BLOCK SOCIAL ICONES-->
+</footer>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~END FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

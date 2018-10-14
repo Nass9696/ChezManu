@@ -97,6 +97,261 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/************************GENERAL RULES*******************/
+header {
+  height: 15em;
+  background-color: #ffe66d
+}
+main {
+  background-color: #ffe66d
+}
+footer {
+  border-top: 1px solid black;
+  background-color: #7c99b4;
+}
+
+article {
+  border: 1px solid black;
+  width: 40%;
+}
+
+/************************GENERAL RULES*******************/
+
+/************************COLOR UTILITIES CLASS*******************/
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.colornone{
+  color: none;
+}
+.backGreen {
+  background-color: green;
+}
+
+.backRed {
+  background-color: red;
+}
+
+.backYellow {
+  background-color: yellow;
+}
+
+/************************COLOR UTILITIES CLASS*******************/
+
+/************************UTILITIES CLASS*******************/
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justifyC {
+  justify-content: center;
+}
+
+.alignC {
+  align-content: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceAroundC{
+  align-content: space-around;
+}
+.textCenter {
+  text-align: center;
+}
+
+.marginR {
+  margin-right: 0.5em;
+}
+
+/************************UTILITIES CLASS*******************/
+
+/************************ !!!!  START BASE STYLE CSS!!!! ************************/
+
+/************************FIXED BAR******************/
+.BarFixed {
+  background-color: #7c99b4;
+}
+
+.Logo {
+  width: 30%;
+  align-items: center;
+}
+
+.IconMobile {
+  display: flex;
+}
+
+.NavBar {
+  align-items: center;
+}
+
+.FormBarFixed {
+  align-items: center;
+}
+/************************FIXED BAR******************/
+
+/************************START HEADER******************/
+.PrincipalTitle {
+  align-items: center;
+}
+
+.ulListHeader {
+  width: 50%;
+}
+/************************END HEADER******************/
+
+/************************START MAIN******************/
+.iconeArticle {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.MainTextImg {
+  align-items: center;
+}
+
+.MainArticle {
+  height: 30em;
+  align-items: center;
+}
+/************************END MAIN******************/
+
+/************************START FOOTER******************/
+/************************END FOOTER******************/
+
+
+/************************ !!!!  END BASE STYLE CSS!!!! ************************/
+
+
+/********************!!!!! START STYLE RESPONSIVE DESIGN !!!!!!***************************/
+
+/****************RESPONSIVE UTILITIES CLASS****************/
+.none {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+/****************RESPONSIVE UTILITIES CLASS****************/
+
+/**************************TABLET***************************/
+@media screen and (min-width: 500px){
+
+/************************GENERAL RULES*******************/
+article {
+  width: 30%;
+}
+/************************GENERAL RULES*******************/
+
+/**************************BAR FIXED***************************/
+.Logo {
+  width: 10%;
+}
+
+.IconMobile {
+  display: none;
+}
+
+.FormBarFixed {
+  display: flex;
+}
+/**************************BAR FIXED***************************/
+
+/***********************HEADER TABLET*********************/
+.NavHeader {
+  display: flex;
+}
+
+.PrincipalTitle {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/***********************HEADER TABLET*********************/
+
+/***********************MAIN TABLET*********************/
+.CallToActionBlock {
+  display: flex;
+  align-items: center;
+}
+
+.MainArticle {
+  height: 10em;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/***********************MAIN TABLET*********************/
+
+/***********************FOOTER TABLET*********************/
+.NavFooter {
+  display: flex;
+}
+/***********************FOOTER TABLET*********************/
+}
+/**************************TABLET***************************/
+
+/**************************DESKTOP***************************/
+@media screen and (min-width: 1199px){
+
+/***********************GENERAL DESKTOP RULES*********************/
+article {
+  width: 45%;
+}
+/***********************GENERAL DESKTOP RULES*********************/
+/***********************BAR FIXED DESKTOP*********************/
+.IconMobile {
+    display: none;
+  }
+  .SearchBar {
+    display: flex;
+  }
+/***********************BAR FIXED DESKTOP*********************/
+
+/***********************HEADER DESKTOP*********************/
+/***********************HEADER DESKTOP********************/
+
+/***********************MAIN DESKTOP*********************/
+.BlockMainArticle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.MainArticle {
+  height: 30em;
+  width: 40%;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/***********************MAIN DESKTOP*********************/
+
+/***********************FOOTER DESKTOP*********************/
+.NavFooter {
+  display: none;
+}
+/***********************FOOTER DESKTOP*********************/
+
+}
+/**************************DESKTOP***************************/
+
+/********************!!!!! END STYLE RESPONSIVE DESIGN !!!!!!***************************/
 
 
 
